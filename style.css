@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+}
+
+h1{
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+h1 {
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 2em;
+    text-align: center;
+    margin: 20px 0 50px;
+}
+
+.container {
+    width: 100%;
+    gap: 20px;  
+    margin: 0 auto;
+    padding: 0 20px; 
+}
+
+.box{
+   background-color: lightgray ;
+    padding: 10px;
+    cursor: pointer;
+    position: relative; 
+    border: 1px solid #ccc; 
+    flex: 1 1 calc(33.333% - 40px); 
+    
+    white-space: wrap;
+    float: left;
+    margin: 10px;
+}
+
+
+/* Text inside the box */
+.box p {
+    margin: 10px 0 0;
+    text-align: center;
+   padding-top: 30px;
+}
+
+/* Labels for the boxes */
+.FoodLabel {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: lightcoral;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+    border: 1px solid black;
+    padding: 5px 10px;
+    border-radius: 4px; 
+    white-space:nowrap;
+}
+
+.Chicken {
+    background-color: lightcoral;
+    
+}
+
+.Beef {
+    background-color: darkred;
+    padding-left: 10px;
+    padding-right: 10px;
+   
+    
+}
+
+.Sushi {
+    background-color: #ff7f50;
+   
+}
+
+/* Responsive Layout*/
+
+@media(min-width:992px){
+    .box{
+        width: 31%;
+        align-items: center;
+    }
+}
+
+
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    
+    .box1{
+        width: 46%;
+    }
+        .box2{
+            width: 46%;
+        }
+
+
+    .box3{
+       clear: both;
+        width: 95%;
+    }
+    
+}
+
+@media (max-width: 767px) {
+    .box {
+        flex: 1 1 100%; /* Full-width for smaller screens */
+    }
+}
