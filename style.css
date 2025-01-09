@@ -35,9 +35,8 @@ h1 {
     padding: 10px;
     cursor: pointer;
     position: relative; 
-    border: 1px solid #ccc; 
+    border: 1px solid black;
     flex: 1 1 calc(33.333% - 40px); 
-    
     white-space: wrap;
     float: left;
     margin: 10px;
